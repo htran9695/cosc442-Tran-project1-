@@ -12,7 +12,7 @@ public class GameBoardFull extends GameBoard {
         CardCell c1 = new CardCell(Card.TYPE_CHANCE, "Chance 1");
         PropertyCell lb2 = new PropertyCell();
         PropertyCell lb3 = new PropertyCell();
-        JailCell jail = new JailCell();
+        Cell jail = new JailCell();
         PropertyCell p1 = new PropertyCell();
         UtilityCell u1 = new UtilityCell();
         PropertyCell p2 = new PropertyCell();
@@ -22,7 +22,7 @@ public class GameBoardFull extends GameBoard {
         CardCell cc2 = new CardCell(Card.TYPE_CC, "Community Chest 2");
         PropertyCell o2 = new PropertyCell();
         PropertyCell o3 = new PropertyCell();
-        FreeParkingCell fp = new FreeParkingCell();
+        Cell fp = new FreeParkingCell();
         PropertyCell r1 = new PropertyCell();
         CardCell c2 = new CardCell(Card.TYPE_CHANCE, "Chance 2");
         PropertyCell r2 = new PropertyCell();
