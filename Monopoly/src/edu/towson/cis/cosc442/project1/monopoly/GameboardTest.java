@@ -30,21 +30,21 @@ public class GameboardTest extends TestCase {
 	}
 	
 	public void testPropertyNumberForColor() {
-		PropertyCell cell1 = new PropertyCell();
-		cell1.setName("Blue 1");
-		cell1.setColorGroup("blue");
-		PropertyCell cell2 = new PropertyCell();
-		cell2.setName("Blue 2");
-		cell2.setColorGroup("blue");
-		PropertyCell cell3 = new PropertyCell();
-		cell3.setName("Green 1");
-		cell3.setColorGroup("green");
-		
+		PropertyCell cell1 = generateProperty("Blue 1", "blue");
+		PropertyCell cell2 = generateProperty("Blue 2", "blue");
+		PropertyCell cell3 = generateProperty("Green 1", "green");
 		gameBoard.addCell(cell1);
 		gameBoard.addCell(cell2);
 		gameBoard.addCell(cell3);
 		assertEquals(2, gameBoard.getPropertyNumberForColor("blue"));
 		assertEquals(1, gameBoard.getPropertyNumberForColor("green"));
+	}
+/* Added the generate property method */
+	private PropertyCell generateProperty(String name,String color) {
+		PropertyCell cell1 = new PropertyCell();
+		cell1.setName("name");
+		cell1.setColorGroup("color");
+		return cell1;
 	}
 	
 	public void testQueryCell() {
