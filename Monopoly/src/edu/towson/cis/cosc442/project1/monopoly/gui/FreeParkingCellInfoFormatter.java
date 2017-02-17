@@ -17,4 +17,8 @@ public class FreeParkingCellInfoFormatter implements CellInfoFormatter {
     public String format(IOwnable cell) {
         return FP_CELL_LABEL;
     }
+
+	public String checkOwner(IOwnable cell) {
+		return null;
+	}
 }

@@ -17,4 +17,8 @@ public class GotoJailCellInfoFormatter implements CellInfoFormatter {
     public String format(IOwnable cell) {
     	return GOTO_JAIL_LABEL;
 	}
+
+	public String checkOwner(IOwnable cell) {
+		return null;
+	}
 }

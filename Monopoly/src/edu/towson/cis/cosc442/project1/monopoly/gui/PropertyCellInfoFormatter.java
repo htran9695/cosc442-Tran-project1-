@@ -28,8 +28,7 @@ public class PropertyCellInfoFormatter implements CellInfoFormatter {
                 .append("</html>");
         return buf.toString();
     }
-
-	private String checkOwner(IOwnable cell) {
+    public String checkOwner(IOwnable cell) {
 		Player owner = cell.getTheOwner();
         String ownerName = "";
         if(owner != null) {
@@ -37,4 +36,5 @@ public class PropertyCellInfoFormatter implements CellInfoFormatter {
         }
 		return ownerName;
 	}
+
 }

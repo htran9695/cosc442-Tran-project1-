@@ -17,4 +17,8 @@ public class GoCellInfoFormatter implements CellInfoFormatter {
     public String format(IOwnable cell) {
         return GO_CELL_LABEL;
     }
+
+	public String checkOwner(IOwnable cell) {
+		return null;
+	}
 }

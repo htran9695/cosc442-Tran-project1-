@@ -17,4 +17,8 @@ public class ChanceCellInfoFormatter implements CellInfoFormatter {
     public String format(IOwnable cell) {
         return CHANCE_CELL_LABEL;
     }
+
+	public String checkOwner(IOwnable cell) {
+		return null;
+	}
 }

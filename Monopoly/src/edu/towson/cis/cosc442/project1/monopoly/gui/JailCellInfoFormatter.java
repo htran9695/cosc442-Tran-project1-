@@ -18,4 +18,8 @@ public class JailCellInfoFormatter implements CellInfoFormatter {
 		return JAIL_CELL_LABEL;
 	}
 
+	public String checkOwner(IOwnable cell) {
+		return null;
+	}
+
 }
